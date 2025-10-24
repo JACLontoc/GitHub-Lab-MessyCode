@@ -1,11 +1,23 @@
-#this program add numbers and print the result but its really messy
+# Improved Adder Program
 
-def addnumb(a,b):return a+b
-def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+def add_numbers(num1, num2):
+    return num1 + num2
+
+def get_integer_input(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
+
+def main():
+    print(" Welcome to the Simple Adder Program ")
+    
+    first_number = get_integer_input("Enter the first number: ")
+    second_number = get_integer_input("Enter the second number: ")
+    
+    result = add_numbers(first_number, second_number)
+    print(f"The sum is: {result}")
+
+if __name__ == "__main__":
+    main()
