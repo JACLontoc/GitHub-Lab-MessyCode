@@ -1,11 +1,26 @@
-#this program add numbers and print the result but its really messy
+#Adds the two inputted numbers together as the sum function.
+def sum(firstNumber,secondNumber):
+  return firstNumber + secondNumber
 
-def addnumb(a,b):return a+b
+#main function
 def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+
+  #Displays the program description.
+  print("\nThis is a simple adder program.\n")
+
+  #Only allows the input of integers
+  try:
+    firstNumber = int(input("Enter first number: "))
+    secondNumber = int(input("Enter second number: "))
+
+  #If the one of the inputs is not an integer it will consider it as an error and repeat the program
+  except ValueError:
+    print("Please input number!")
+    main()
+
+  #If the inputs are integers it will add the numbers and print
+  else:
+    print("The sum is:",sum(firstNumber,secondNumber))
+    
+#Calls the function at the end.
+main( )
