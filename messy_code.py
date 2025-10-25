@@ -1,11 +1,15 @@
-#this program add numbers and print the result but its really messy
+#This program adds numbers and prints the sum
+def addNumbers(a,b):
+    return a+b
 
-def addnumb(a,b):return a+b
 def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+    print("This is a simple addition program.")
+    try:
+        firstNum=int(input("Enter first number: "))
+        secondNum=int(input("Enter second number: "))
+        totalAdd=addNumbers((firstNum),(secondNum))
+        print("The sum is :",totalAdd)
+    except ValueError:
+      print("Value Error. Please try again")
+       
+main( )#Calls the function 
