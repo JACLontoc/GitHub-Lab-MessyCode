@@ -1,11 +1,23 @@
-#this program add numbers and print the result but its really messy
+# Summation of two numbers.
+def calculateSum(firstNumber, secondNumber):
+  return firstNumber + secondNumber
 
-def addnumb(a,b):return a+b
+
+# Main Program
 def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+  print("This is a simple adder program. \n")
+
+  try:
+    firstNumber = float(input("Enter first number: "))
+    secondNumber = float(input("Enter second number: "))
+
+    sum = calculateSum(firstNumber, secondNumber)
+
+    print("\n The sum is :", sum)
+
+  except ValueError:
+    print("Value Error: Please input a valid number.")
+
+
+# Call the function at end.
+main() 
