@@ -1,6 +1,6 @@
 #This program adds numbers and prints the sum
-
-def addNumbers(a,b):return a+b
+def addNumbers(a,b):
+    return a+b
 
 def main( ):
     print("This is a simple addition program.")
@@ -13,5 +13,3 @@ def main( ):
       print("Value Error. Please try again")
        
 main( )#Calls the function 
-'''try and except '''
-
