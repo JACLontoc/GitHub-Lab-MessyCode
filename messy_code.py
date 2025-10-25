@@ -3,6 +3,15 @@
 def Addition(num1,num2):
 	return num1 + num2
 
+def EnterNumber():
+	try:
+		num1 = int(input("Enter First Number: "))
+		num2 = int(input("Enter Second Number: "))
+	except:
+		print("Please input numbers")
+	return num1,num2
+
+
 def main( ):
   print("This is a simple adder program")
   a=input("enter first number")
