@@ -1,11 +1,28 @@
-#this program add numbers and print the result but its really messy
+"""
+This program prompts the user for two numbers, calculates their sum,
+and prints the result. It attempts input conversion once and handles
+errors by exiting on failure.
+"""
 
-def addnumb(a,b):return a+b
-def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+def addNumbers(numOne, numTwo):
+    return numOne + numTwo
+
+
+def runSimpleAdder():
+    print("This is a simple adder program\n")
+
+    try:
+        firstNumberStr = input("Enter the first number: ")
+        secondNumberStr = input("Enter the second number: ")
+
+        firstNumber = int(firstNumberStr)
+        secondNumber = int(secondNumberStr)
+        
+        totalSum = addNumbers(firstNumber, secondNumber)
+
+        print(f"The sum is: {totalSum}")
+        
+    except ValueError:
+        print("Invalid input. Please enter only whole numbers. Exiting program.")
+
+runSimpleAdder()
