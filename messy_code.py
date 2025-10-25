@@ -1,11 +1,26 @@
-#this program add numbers and print the result but its really messy
+#this program add numbers and print the result but its not  messy anymore
 
 def addnumb(a,b):return a+b
+
 def main( ):
+  print("------------------------------")
   print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+  print("------------------------------")
+  while True:
+    try:
+        a = float(input("Enter First Number: "))
+        b = float(input("Enter Second Number: "))
+        
+        break  
+    except ValueError:
+      
+        print("Invalid input! Please enter a valid number.")
+
+        
+        
+  res=(int(a)+ int(b))
+      
+  print("the sum is: ", res)
+
+  
+main( )
