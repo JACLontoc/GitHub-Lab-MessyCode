@@ -1,11 +1,10 @@
-#this program add numbers and print the result but its really messy
+#This program adds numbers and prints the sum
 
-def addnumb(a,b):return a+b
+def addNumbers(a,b):return a+b
 def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+    print("This is a simple adder program")
+    firstNum=input("enter first number: ")
+    secondNum=input("enter second number: ")
+    sum=addNumbers(int(firstNum),int(secondNum))
+    print("the sum is :",sum)
+main( )#calls the function
