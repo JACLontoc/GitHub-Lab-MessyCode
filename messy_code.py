@@ -5,9 +5,9 @@ def addNumbers(a,b):
 def main( ):
     print("This is a simple addition program.")
     try:
-        firstNum=input("Enter first number: ")
-        secondNum=input("Enter second number: ")
-        totalAdd=addNumbers(int(firstNum),int(secondNum))
+        firstNum=int(input("Enter first number: "))
+        secondNum=int(input("Enter second number: "))
+        totalAdd=addNumbers((firstNum),(secondNum))
         print("The sum is :",totalAdd)
     except ValueError:
       print("Value Error. Please try again")
