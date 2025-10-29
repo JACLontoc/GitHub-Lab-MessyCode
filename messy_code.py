@@ -1,4 +1,4 @@
-# This program adds two numbers and prints the result
+# This program adds two numbers and prints the results
 
 def addNumbers(firstNumber, secondNumber):
     sum = firstNumber + secondNumber
