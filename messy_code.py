@@ -1,11 +1,14 @@
-#this program add numbers and print the result but its really messy
+def add(numOne, numTwo):
+    return numOne + numTwo
 
-def addnumb(a,b):return a+b
-def main( ):
-  print("This is a simple adder program")
-  a=input("enter first number")
-  b=input("enter second number")
-  res=addnumb(int(a),int(b))
-  print("the sum is :",res)
-main( )#call the function at end
-# KELVIN CODE
+def main():
+    print("Welcome! This is a simple addition program")
+    firstNum = input("Please enter the first number: ")
+    secondNum = input("Please enter the second number: ")
+    if not firstNum.isdigit() or not secondNum.isdigit():
+        print("Invalid input. Please enter numeric values only.")
+        return main()
+    else:
+        print(f"The Sum is : {add(int(firstNum), int(secondNum))}")
+
+main()
