@@ -1,2 +1,2 @@
 # Fixed version
-    passed by Group 5
+    In this version of my simple adder program I organized the text and added a little ascii art.
